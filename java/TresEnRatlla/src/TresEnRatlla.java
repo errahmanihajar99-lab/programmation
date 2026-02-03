@@ -35,12 +35,10 @@ public class TresEnRatlla {
                 }
             }while (joc[fila][colm]!='.');
 
+            joc[fila][colm] = torn;
 
 
-
-
-
-        }while ();
+        }while (!tres(torn));
     }
 
     public static void mostrarPlateu(char[][] x) {
@@ -52,6 +50,7 @@ public class TresEnRatlla {
         }
     }
 
+    // demander la position
     public static int[] demanarPosicio(char jgd){
         int[] psc = new int[2];
         String resposta;
@@ -65,4 +64,20 @@ public class TresEnRatlla {
         return psc;
     }
 
+    // compreuver le jeux
+    public static boolean tres(char jgd) {
+        for (int i = 0; i < 3; i++) {
+            // Vérification des colonnes (joc[0][i], [1][i], [2][i])
+            if (joc[0][i] == jgd && joc[1][i] == jgd && joc[2][i] == jgd) return true;
+
+            // Vérification des lignes (joc[i][0], [i][1], [i][2])
+            if (joc[i][0] == jgd && joc[i][1] == jgd && joc[i][2] == jgd) return true;
+        }
+
+        // Vérification des deux diagonales (hors de la boucle)
+        if (joc[0][0] == jgd && joc[1][1] == jgd && joc[2][2] == jgd) return true;
+        if (joc[0][2] == jgd && joc[1][1] == jgd && joc[2][0] == jgd) return true;
+
+        return false; // Si on arrive ici, personne n'a gagné
+    }
 }
