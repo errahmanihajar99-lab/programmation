@@ -1,0 +1,72 @@
+.outside{
+    width: 95%;
+    margin: 10px auto;
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    background-color: white;
+}
+
+.asside{
+    width: 20%;
+    height: 400px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.wrapper{
+    width: 75%;
+    border: 2px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: lightblue;
+    position: relative;
+}
+
+.header{
+    width: 90%;
+    height: 80px;
+    border: 2px solid black;
+    margin: 0 auto;
+    background-color: lightgray;
+    position: relative;
+}
+
+.offer{
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    padding: 5px 10px;
+    background-color: rgb(127, 7, 7);
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.nav{
+    width: 150px;
+    background-color: rgb(136, 93, 221);
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.content{
+    width: 70%;
+    margin-left: 200px; 
+    margin-top: -145px; 
+}
+
+.content p{
+    background-color: rgb(222, 222, 71);
+    border: 2px solid black;
+    padding: 10px;
+    width: 100%;
+}
+
+.footer{
+    width: 70%;
+    background-color: rgb(24, 91, 24);
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px auto;
+}

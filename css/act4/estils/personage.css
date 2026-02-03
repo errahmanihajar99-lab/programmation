@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#personatge {
+    padding: 20px;
+}
+#personatge h1 {
+    color: #333;
+}
+#personatge a {
+    display: block;
+    margin-bottom: 10px;
+}
+aside {
+    float: right;
+    width: 90%;
+    height: 150px;
+}
+img {
+    width: 100px;
+    height: auto;
+}
+p{
+    text-align: justify;
+    background-color: #f0f0f0;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+span{
+    font-weight: bold;
+}

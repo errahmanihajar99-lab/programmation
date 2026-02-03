@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="description" content="site web gratuit qui resume filme le parrain">
+    <meta name="keyworld" content="le parrain, film, avis film, acteur, directeur, personnages principaux">
+    <meta name="auteur" content="Hajar Errahmani">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+</head>
+<body style="background-color: black; color:rgb(247, 225, 173)">
+    <h1 style="text-align: center;">Formulaire avis</h1>
+    <h2 style="text-align: center; text-decoration: underline;">Nous serions ravis de connetre votre avis</h2><br>
+    <img src="./img/Le_Parrain_-_Affiche_VOD.webp" style=" height: 325px; width: 300px; align-items: center; margin-left:20%" alt="parrain">
+
+
+    <form  method="post" style="float: right; height: 325px; width: 45%; margin-top: 20px">
+        <fieldset style="border: none;">
+            <legend>Formulaire</legend>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" required style="background-color: black; color:rgb(247, 225, 173)"><br><br>
+
+            <label for="prenom">Prenom</label>
+            <input type="text" id="prenom" required style="background-color: black; color:rgb(247, 225, 173)"><br><br>
+
+            <label id="mail">e-mail</label>
+            <input type="email" required style="background-color: black; color:rgb(247, 225, 173)"><br><br>
+
+            <label id="tele">telephone</label>
+            <input type="tel" style="background-color: black; color:rgb(247, 225, 173)"><br><br>
+            
+            <label id="avis">Type avis</label>
+            <label id="q">Question</label><input type="radio" name="avis" style="background-color: black; color:rgb(247, 225, 173)">
+            <label id="a">commantaire</label><input type="radio" name="avis" style="background-color: black; color:rgb(247, 225, 173)"><br><br>
+
+            <label for="txt"></label>
+            <textarea name="txt" id="txt" style="background-color: black; color:rgb(247, 225, 173)" required></textarea>
+        </fieldset><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        
+    </form>
+
+    <div> 
+        <h1 style="text-align: center; color:rgb(247, 225, 173)">Merci </h1>
+    </div>
+    
+</body>
+</html>

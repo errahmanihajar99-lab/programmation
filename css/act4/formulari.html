@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="description" content="site web gratuit qui resume filme le parrain">
+    <meta name="keyworld" content="le parrain, film, avis film, acteur, directeur, personnages principaux">
+    <meta name="auteur" content="Hajar Errahmani">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+    <link rel="stylesheet" href="./estils/formulari.css">
+</head>
+<body>
+    <h1>Formulaire avis</h1>
+    <h2>Nous serions ravis de connetre votre avis</h2><br>
+    <img src="./img/Le_Parrain_-_Affiche_VOD.webp" alt="parrain">
+
+
+    <form  method="post">
+        <fieldset>
+            <legend>Formulaire</legend>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" required><br><br>
+
+            <label for="prenom">Prenom</label>
+            <input type="text" id="prenom" required><br><br>
+
+            <label id="mail">e-mail</label>
+            <input type="email" required><br><br>
+
+            <label id="tele">telephone</label>
+            <input type="tel"><br><br>
+            
+            <label id="avis">Type avis</label>
+            <label id="q">Question</label><input type="radio" name="avis">
+            <label id="a">commantaire</label><input type="radio" name="avis"><br><br>
+
+            <label for="txt"></label>
+            <textarea name="txt" id="txt" required></textarea>
+        </fieldset><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        
+    </form>
+
+    <div> 
+        <h1 >Merci </h1>
+    </div>
+    
+</body>
+</html>

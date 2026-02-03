@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+</head>
+<body>
+    <header>
+        <h1>Blanes DEvelopers Conference 2025</h1>
+    </header><br>
+    <main>
+        <form action="action" method="post">
+            <fieldset><legend>Dades de l'usuari</legend>
+                <form action="action" method="post">
+                    <label id="nom" >Nom</label>
+                    <input type="text" required><br><br>
+
+                    <label id="Cognom">Cognom</label>
+                    <input type="text" required><br><br>
+
+                    <label id="NIF">NIF</label>
+                    <input type="text" required><br><br>
+
+                    <label id="data">Data de naixement</label>
+                    <input type="date"><br><br>
+
+                    <label id="foto">Fotografia</label>
+                    <input type="file" value="tria un fitxer"><br><br>
+
+                    <label id="sex">Sex  </label>
+                    <label id="Home">Home</label><input type="radio" name="sex">
+                    <label id="Dona">Dona</label><input type="radio" name="sex"><br><br>
+
+                    <label id="adresca">Adreca</label>
+                    <input type="text"><br><br>
+
+                    <label id="tel">Telefono</label>
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br><br>
+
+                    <label id="e-mail">e-mail</label>
+                    <input type="email"><br><br>
+
+                    <p>Quins llenguas dominas?</p>
+                    <input type="checkbox"><label id="java">Java</label>
+                    <input type="checkbox"><label id="php">PHP</label>
+                    <input type="checkbox"><label id="javas">JavaScript</label>
+                    <input type="checkbox"><label id="c++">C++</label>
+                    <input type="checkbox"><label id="c#">C#</label><br><br>
+
+                    <p>ets estudiant?</p>
+                    <label id="si">si</label>
+                    <input type="radio" name="estudiant">
+                    <label id="no">no</label>
+                    <input type="radio" name="estudiant">
+    
+            </fieldset>
+            <fieldset>
+                <p>seleccina on vols escriurate</p>
+                <table style="text-align: center; border-collapse: collapse;">
+                    <tr>
+                        <th>Hora</th>
+                        <th>Dilluns</th>
+                        <th>dimarts</th>
+                        <th>Dimecres</th>
+                        <th>Dijous</th>
+                        <th>Divendres</th>
+                    </tr>
+                    <tr>
+                        <th>8:30-10:30</th>
+                        <td>
+                            <select>
+                                    <option value="1" selected>Backend</option>
+                                    <option value="2">Frontend</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                    <option value="1" selected>Backend</option>
+                                    <option value="2">Frontend</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                    <option value="1" selected>Backend</option>
+                                    <option value="2">Frontend</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                    <option value="1" selected>Backend</option>
+                                    <option value="2">Frontend</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                    <option value="1" selected>Backend</option>
+                                    <option value="2">Frontend</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>10:30-13:30</th>
+                        <td>
+                            <select>
+                                    <option value="1" selected>Backend</option>
+                                    <option value="2">Frontend</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                    <option value="1" selected>Backend</option>
+                                    <option value="2">Frontend</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                    <option value="1" selected>Backend</option>
+                                    <option value="2">Frontend</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                    <option value="1" selected>Backend</option>
+                                    <option value="2">Frontend</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                    <option value="1" selected>Backend</option>
+                                    <option value="2">Frontend</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>14-16</th>
+                        <td>
+                            <select>
+                                    <option value="1" selected>Backend</option>
+                                    <option value="2">Frontend</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                    <option value="1" selected>Backend</option>
+                                    <option value="2">Frontend</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                    <option value="1" selected>Backend</option>
+                                    <option value="2">Frontend</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                    <option value="1" selected>Backend</option>
+                                    <option value="2">Frontend</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                    <option value="1" selected>Backend</option>
+                                    <option value="2">Frontend</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset><br><br>
+            <button type="submit"><img src="./icone/9104139_sent_send_mail_message_envelope_icon.png" alt="" style="width: 50px; height: 50px;"></button><br><br>
+            <input type="reset" value="Asborrar">
+        </form>
+    </main>
+</body>
+</html>

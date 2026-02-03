@@ -1,0 +1,90 @@
+.outside{
+    background-color: rgb(51, 51, 51);
+    margin: 3px;
+    border-radius: 6px;
+}
+h1{
+    color: aliceblue;
+    padding: 5px;
+    margin: 5px;
+}
+
+.container{
+    width: 1065px;
+    display: flex;
+    background-color: lightgray;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 6px;
+}
+.container div{
+    padding: 20px;
+    margin: 10px;
+}
+
+main{
+    display: flex;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.nav{
+    width: 200px;
+    height: 800px;
+    background-color: rgb(199, 206, 212);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.asside{
+    width: 200px;
+    height: 1070px;
+    background-color: rgb(199, 206, 212);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.content{
+    width: 600px;
+    padding: 10px;
+    background-color: rgb(199, 206, 212);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.flex{
+    background-color: rgb(60, 59, 59);
+    color: aliceblue;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    padding-top: 3%;
+    padding-bottom: auto;
+    padding-left: 5px;
+    border-radius: 6px;
+}
+
+img{
+    width: 150px;
+    height: auto;
+    border: 1px dashed grey;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.nnwrap{
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    background-color: rgb(233, 233, 233);
+    border-radius: 6px;
+}
+.wrap{
+    flex-wrap: wrap;
+    background-color: rgb(233, 233, 233);
+    border-radius: 6px;
+}
