@@ -16,7 +16,8 @@ public class TresEnRatlla {
 
         // declarer les variables
         int[] fc = new int[2]; //variable de la position
-        char torn= 'O';
+        int contador = 0;
+        char torn= 'O'; // pour compter le nombre d essaie pour chaque joueure
 
         do {
             int fila;
@@ -36,9 +37,11 @@ public class TresEnRatlla {
             }while (joc[fila][colm]!='.');
 
             joc[fila][colm] = torn;
+            contador++;
+            mostrarPlateu(joc);
 
 
-        }while (!tres(torn));
+        }while (!tres(torn) && contador<9);
     }
 
     public static void mostrarPlateu(char[][] x) {
