@@ -42,6 +42,11 @@ public class TresEnRatlla {
 
 
         }while (!tres(torn) && contador<9);
+
+        if (tres(torn)){
+            System.out.println("En jugador "+ torn+" ha guaniat");
+        }
+        else {System.out.print(" No hi ha ganador");}
     }
 
     public static void mostrarPlateu(char[][] x) {
