@@ -37,4 +37,11 @@ public class InputControl {
 
         return c;
     }
+
+    public static boolean verificarCaracter(String chaine){
+        char c = introduirCaracter("introdueix un caracter per verificar");
+
+        // Correction : On transforme le char 'c' en String pour que .contains() fonctionne
+        return chaine.contains(String.valueOf(c));
+    }
 }
