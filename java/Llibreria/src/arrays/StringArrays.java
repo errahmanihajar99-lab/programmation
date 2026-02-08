@@ -2,43 +2,66 @@ package arrays;
 
 import java.util.Arrays;
 import java.util.Random;
-
+/**
+ * Cette classe contient des outils pour manipuler des tableaux String.
+ * Elle fait partie de la bibliothèque de gestion de données.
+ * * @author Hajar Errahmani
+ * @version 1.0
+ */
 
 public class StringArrays {
 
-    // 1.creation du tableau de n element
-    public static String[] crearArrayStr(int n){
+    /**
+     * Creation d'un tableau
+     * * @param n la longueur du tableau.
+     * @return  un tableau d entier de la longueur n.
+     */    public static String[] crearArrayStr(int n){
         return new String[n];
     }
 
-    // 2.creation du tableau bidimentonal
-    public static String[][] crearArrayintDid(int n, int m){
+    /**
+     * creer un tableau bidimentional
+     * @param n nombre des lignes.
+     * @param m nombre des colones
+     * @return un tableau bidementional
+     */    public static String[][] crearArrayintDid(int n, int m){
         return new String[n][m];
     }
 
-    // 3.Initialiser avec une valeur donnée
-    public static void iniciArrayStr(String[] tab, String v){
+    /**
+     * remplire un tableau avec une valeur v
+     * @param tab tableau a remplire
+     * @param v la valeur
+     */    public static void iniciArrayStr(String[] tab, String v){
         for (int i=0; i<tab.length; i++){
             tab[i] = v;
         }
     }
 
-    // 4.Initialiser un array bidim avec une valeur donnée
+    /**
+     * remplire yn tableau bidi
+     * @param tab le tableau a remplire
+     * @param v la valeur
+     */
     public static void iniciArrayBidStr(String[][] tab, String v){
         for (String[] ligne : tab) {
             Arrays.fill(ligne, v);
         }
     }
 
-    // 5.Affichage des valeurs d'un tableau
-    public static void mostrarVArrayStr(String[] tab){
+    /**
+     * affichage des valeurs
+     * @param tab le tableau a afficher
+     */    public static void mostrarVArrayStr(String[] tab){
         for (String j : tab) {
             System.out.println(j);
         }
     }
 
-    // 6.Affichage des valeurs d'un tableau bidimensionnel
-    public static void mostrarVArrayBiStr(String[][] tab){
+    /**
+     * afficher un tableau bid
+     * @param tab le tableau a afficher
+     */    public static void mostrarVArrayBiStr(String[][] tab){
         for (String[] ligne : tab){
             for (String v : ligne){
                 System.out.println(v +" ");
@@ -46,8 +69,10 @@ public class StringArrays {
         }
     }
 
-    // 7.Inverser les elements du tableau
-    public static void inversarElementsStr (String[] tab){
+    /**
+     * Inverser un tableau
+     * @param tab le tableau a inverser
+     */    public static void inversarElementsStr (String[] tab){
         for (int i=0; i< tab.length/2; i++){
             String x = tab[i];
             tab[i] = tab[tab.length-i-1];
@@ -55,8 +80,10 @@ public class StringArrays {
         }
     }
 
-    // 8.Déplacer (Décalage vers la gauche)
-    public static void deplacerStr(String[] tab){
+    /**
+     * deplacer les elements
+     * @param tab le tableau des element a deplacer
+     */    public static void deplacerStr(String[] tab){
         String x = tab[0];
         for (int i=0; i< tab.length; i++){
             if(i< tab.length-1){
@@ -66,8 +93,10 @@ public class StringArrays {
         }
     }
 
-    // 9.mélanger un tableau
-    // Pour mélanger un tableau en Java de manière vraiment aléatoire (équitable), on utilise l'algorithme de Fisher-Yates.
+    /**
+     * melanger les elements
+     * @param tab tableau des elemnt a melanger
+     */    // Pour mélanger un tableau en Java de manière vraiment aléatoire (équitable), on utilise l'algorithme de Fisher-Yates.
     public static void melangerInt (String[] tab){
         Random rand = new Random(); // Objet pour générer du hasard
         for (int i= tab.length-1; i>0; i--){

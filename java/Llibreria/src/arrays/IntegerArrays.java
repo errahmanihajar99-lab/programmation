@@ -2,41 +2,72 @@ package arrays;
 import java.util.Arrays;
 import java.util.Random;
 
+/**
+  *Cette classe contient des outils pour manipuler des tableaux d'entiers.
+  * Elle fait partie de la bibliothèque de gestion de données.
+  * * @author Hajar Errahmani
+  * @version 1.0
+  */
+
 
 public class IntegerArrays {
 
-    // 1.creation du tableau de n element
+    /**
+     * Creation d'un tableau
+     * * @param n la longueur du tableau.
+     * @return  un tableau d entier de la longueur n.
+     */
     public static int[] crearArrayInt(int n){
         return new int[n];
     }
 
-    // 2.creation du tableau bidimentonal
+
+    /**
+     * creer un tableau bidimentional
+     * @param n nombre des lignes.
+     * @param m nombre des colones
+     * @return un tableau bidementional
+     */
     public static int[][] crearArrayintDid(int n, int m){
         return new int[n][m];
     }
 
-    // 3.Initialiser avec une valeur donnée
+    /**
+     * remplire un tableau avec une valeur v
+     * @param tab tableau a remplire
+     * @param v la valeur
+     */
     public static void iniciArrayInt(int[] tab, int v){
         for (int i=0; i<tab.length; i++){
             tab[i] = v;
         }
     }
 
-    // 4.Initialiser un array bidim avec une valeur donnée
+    /**
+     * remplire yn tableau bidi
+     * @param tab le tableau a remplire
+     * @param v la valeur
+     */
     public static void iniciArrayBidInt(int[][] tab, int v){
         for (int[] ints : tab) {
             Arrays.fill(ints, v);
         }
     }
 
-    // 5.Affichage des valeurs d'un tableau
+    /**
+     * affichage des valeurs
+     * @param tab le tableau a afficher
+     */
     public static void mostrarVArrayInt(int[] tab){
         for (int j : tab) {
             System.out.println(j);
         }
     }
 
-    // 6.Affichage des valeurs d'un tableau bidimensionnel
+    /**
+     * afficher un tableau bid
+     * @param tab le tableau a afficher
+     */
     public static void mostrarVArrayBiInt(int[][] tab){
         for (int[] ligne : tab){// chaque ligne dans le tableau
             for (int v : ligne){// chaque element de la ligne
@@ -45,7 +76,10 @@ public class IntegerArrays {
         }
     }
 
-    // 7.Inverser les elements du tableau
+    /**
+     * Inverser un tableau
+     * @param tab le tableau a inverser
+     */
     public static void inversarElementsInt (int[] tab){
         for (int i=0; i< tab.length/2; i++){
             int x = tab[i];
@@ -54,7 +88,10 @@ public class IntegerArrays {
         }
     }
 
-    // 8.Déplacer (Décalage vers la gauche)
+    /**
+     * deplacer les elements
+     * @param tab le tableau des element a deplacer
+     */
     public static void deplacerInt(int[] tab){
         int x = tab[0];
         for (int i=0; i< tab.length; i++){
@@ -65,7 +102,10 @@ public class IntegerArrays {
         }
     }
 
-    // 9.mélanger un tableau
+    /**
+     * melanger les elements
+     * @param tab tableau des elemnt a melanger
+     */
     // Pour mélanger un tableau en Java de manière vraiment aléatoire (équitable), on utilise l'algorithme de Fisher-Yates.
     public static void melangerInt (int[] tab){
         Random rand = new Random(); // Objet pour générer du hasard
