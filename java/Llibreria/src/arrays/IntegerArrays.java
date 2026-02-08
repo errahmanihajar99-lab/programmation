@@ -3,11 +3,11 @@ import java.util.Arrays;
 import java.util.Random;
 
 /**
-  *Cette classe contient des outils pour manipuler des tableaux d'entiers.
-  * Elle fait partie de la bibliothèque de gestion de données.
-  * * @author Hajar Errahmani
-  * @version 1.0
-  */
+ *Cette classe contient des outils pour manipuler des tableaux d'entiers.
+ * Elle fait partie de la bibliothèque de gestion de données.
+ * * @author Hajar Errahmani
+ * @version 1.0
+ */
 
 
 public class IntegerArrays {
