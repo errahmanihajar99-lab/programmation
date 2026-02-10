@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"altres","l":"altres"},{"p":"input","l":"input"},{"p":"arrays","l":"IntegerArrays"},{"p":"arrays","l":"StringArrays"},{"p":"<Unnamed>","l":"TestFuncions"}];updateSearchResults();
